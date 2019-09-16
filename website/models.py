@@ -33,19 +33,4 @@ class Category(models.Model):
         string for representint the model object
         """
         return(self.name)
-
-
-class Service(models.Model):
-    """
-    Represent a service provided to customers
-    """
-    name = models.CharField(max_length=100)
-
-    summary = models.TextField(max_length=1000,\
-        help_text='Enter a short description of the service')
-
-    def __str__(self):
-        """
-        string for representint the model object
-        """
-        return(self.name)    
+    
