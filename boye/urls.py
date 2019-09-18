@@ -29,6 +29,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('website/', include('website.urls')),
+    # redirect the root url of the site to the website
+    # application with the RedirectView function
     path('', RedirectView.as_view(url='/website/', permanent=True)),
 
 ]

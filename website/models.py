@@ -13,6 +13,9 @@ class Project(models.Model):
     category = models.ForeignKey('Category',\
         on_delete=models.SET_NULL, null=True)
 
+    image = models.ImageField(upload_to='images/', default='images/pi.jpg')
+    pub_date = models.DateField(auto_now_add=True, verbose_name='Date project was published')
+
 
     def __str__(self):
         """
