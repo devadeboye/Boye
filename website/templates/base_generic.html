@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block title %}<title>Boye Home</title>{% endblock %}
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+        
+        <!-- add aditional css in static file -->
+        {% load static %}
+        <link rel= "stylesheet" href="{% static 'css/w3.css' %}">
+        <link rel= "stylesheet" href="{% static 'css/style.css' %}">
+        <link rel= "stylesheet" href="{% static 'fontawesome-5.10.2/css/fontawesome.min.css' %}">
+    </head>
+
+    <body>
+        <div class="w3-container" id="my_container">
+            {% block aside %}
+            <aside id="nav" class="w3-card">
+                <div id="nav_but">
+                    <a class="fa fa-home w3-text-theme solid w3-tooltip">
+                        <span class="w3-text tooltip">Home</span>
+                    </a>
+                    <a class="fa fa-user w3-text-theme solid w3-tooltip">
+                        <span class="w3-text tooltip">About</span>
+                    </a>
+                    <a class="fa fa-cogs w3-text-theme solid w3-tooltip">
+                        <span class="w3-text tooltip">Services</span>
+                    </a>
+                    <a class="fa fa-film w3-text-theme solid w3-tooltip">
+                        <span class="w3-text tooltip">Gallery</span>
+                    </a>
+                    <a class="fa fa-envelope w3-text-theme solid w3-tooltip">
+                        <span class="w3-text tooltip">Contact</span>
+                    </a>
+                    <a class="fa fa-blog w3-text-theme solid w3-tooltip">
+                        <span class="w3-text tooltip">Blog</span>
+                    </a>
+                </div>
+            </aside>
+            {% endblock %}
+            <section>
+                {% block content %}{% endblock %}
+            </section>
+        </div>
+        <script src = "./fontawesome-5.10.2/js/fontawesome.min"></script>
+    </body>
+
+</html>
