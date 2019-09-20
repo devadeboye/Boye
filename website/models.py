@@ -36,15 +36,3 @@ class Category(models.Model):
         string for representint the model object
         """
         return(self.name)
-    
-
-class AboutMe(models.Model):
-    """
-    Contains all necessary info about me that i wanna
-    display on my site
-    """
-    name = models.CharField(max_length=100)
-    profile_pics = models.ImageField(upload_to='images/profile_pics/')
-    profession = models.CharField(max_length=100)
-    summary = models.TextField(max_length=1000, help_text='Enter a little summary about yourself')
-    
