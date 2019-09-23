@@ -1,29 +1,21 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-    <div id="intro_section">
-        <p id="welcome_msg" class="text-color-l1">
-            welcome to my webpage!
-        </p>
-        <p class="text-color-l1" id="intro">
-            Hello I'm Emmanuel Adeboye
-        </p>
-        <p class="text-color-l1" id="prof">
-                        Software Developer - Data Scientist
-        </p>
-        <p class="text-color-l1" id="intro_body">
-            Malesuada a erat facilisis, fringilla finibus ipsum. Suspendisse magna lectus, interdum non laoreet id, imperdiet hendrerit nulla. Duis non efficitur nunc.
-        </p>
-        <div id ="social_btn">
-            <a class="fa fa-facebook brand text-color-l1 w3-large"></a>
-            <a class="fa fa-twitter brand text-color-l1 w3-large"></a>
-            <a class="fa fa-linkedin brand text-color-l1 w3-large"></a>
-            <a class="fa fa-github brand text-color-l1 w3-large"></a>
-            <a class="fa-envelope solid text-color-l1 w3-large"></a>
-        </div>
-        <div id="action-btn-group">
-            <a class="w3-btn action-btn w3-round-xlarge">Read More</a>
-            <a class="w3-btn action-btn w3-round-xlarge">Contact Me</a>
-        </div>
+    <div id="main_bg">
+        <img src="../static/img/nature1.jpg" style="height: 100%;width: 100%;">
     </div>
+    <div id="intro">
+        <h1>Welcome to Boye.com</h1>
+        <p>
+            This is the personal webpage of Adeboye Emmanuel Adedayo, a Software Developer and a Data Scientist.
+            Emmanuel is a graduate of Biology(Storage Technology) from Federal University of Technology Akure, but his love for technology, the field of computer science, and providing solution to problems made him follow his passion, using computer science and its tools to provide solution to problems and answers to unanswered questions.                        
+        </p>
+        <p>
+                My favourite tool is Python and can also work with Php, Html, CSS, JavaScript.
+        </p>
+    </div>
+{% endblock %}
+
+{% block otherscript %}
+    <script>document.getElementById('home').classList.add('active');</script>
 {% endblock %}

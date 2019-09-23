@@ -1,0 +1,66 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Boye.com - Services</title>{% endblock %}
+
+{% block content %}
+    <div id="main_bg">
+        <img src="../static/img/nature2.jpg" style="height: 100%;width: 100%;">
+    </div>
+    
+    <div id="service_list">
+        <!-- service header -->
+        <div id="serv_head">
+            <h1>Services</h1>
+        </div>
+        <!-- service body -->
+        <div class="serv">
+            <span class="fa fa-user solid ico"></span>
+            <h3>Software Development</h3>
+            <p>
+                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
+            </p>
+        </div>
+        <div class="serv">
+            <span class="fa fa-user solid ico"></span>
+            <h3>Data Science</h3>
+            <p>
+                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
+            </p>
+        </div>
+        <div class="serv">
+            <span class="fa fa-user solid ico"></span>
+            <h3>Static Websites</h3>
+            <p>
+                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
+            </p>
+        </div>
+        <div class="serv">
+            <span class="fa fa-user solid ico"></span>
+            <h3>Dynamic Websites</h3>
+            <p>
+                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
+            </p>
+        </div>
+        <div class="serv">
+            <span class="fa fa-user solid ico"></span>
+            <h3>Responsive Websites</h3>
+            <p>
+                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
+            </p>
+        </div>
+        <div class="serv">
+            <span class="fa fa-user solid ico"></span>
+            <h3>CMS</h3>
+            <p>
+                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
+            </p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscript %}
+    <script>
+        // set page as the active page
+        document.getElementById('about').classList.add('active');
+    </script>
+{% endblock %}

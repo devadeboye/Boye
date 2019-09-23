@@ -1,0 +1,35 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Boye.com - Portfolio</title>{% endblock %}
+
+{% block content %}
+    <div id="main_bg">
+        <img src="../static/img/nature3.jpg" style="height: 100%;width: 100%;">
+    </div>
+    <div id="port_list">
+        <!-- service header -->
+        <div id="port_head">
+            <h1>Portfolio</h1>
+        </div>
+        <!-- service body -->
+        {% if project %}
+            {% for item in project %}
+                <div class="serv">
+                    <img src="{{item.image.url}}">
+                    <h5>{{item.project_name}}</h5>
+                    <h6>{{item.category}}</h6>
+                    <p>{{item.short_description}}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p id="portfolioError">no record found!</p>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block otherscript %}
+    <script>
+        // set page as the active page
+        document.getElementById('portfolio').classList.add('active');
+    </script>
+{% endblock %}
