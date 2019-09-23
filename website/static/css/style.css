@@ -34,6 +34,7 @@ body{
     font-size: 25px;
     padding: 23%;
     margin-bottom: 20%;
+    color: rgb(255,255,255,0.8);
 }
 .tooltip{
     font-size: 14px;
@@ -55,12 +56,12 @@ body{
     color:#3377ff;
 }
 .active{
-    color: #000;
+    color: rgb(0,0,0,0.8) !important;
     background-color: rgb(255,255,255,0.8);
 }
 .active .w3-text{
     color: #000;;
-    background-color: #fff;
+    background-color: rgb(255,255,255,0.8);
 }
 .bold{
     font-weight: bolder;
@@ -72,11 +73,12 @@ body{
 }
 #intro{
     position: absolute;
-    bottom: 70px;
-    left: 738px;
+    bottom: 15%;
+    left: 57%;
     background-color: rgb(255,255,255,0.8);
     color: #000;
     padding: 2%;
+    width: 43%;
 }
 #service_list,#port_list{
     position: absolute;
