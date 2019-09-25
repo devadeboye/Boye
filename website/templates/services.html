@@ -3,54 +3,60 @@
 {% block title %}<title>Boye.com - Services</title>{% endblock %}
 
 {% block content %}
+    {% load static %}
     <div id="main_bg">
-        <img src="../static/img/nature2.jpg" style="height: 100%;width: 100%;">
+        <img src="{% static 'img/nature2.jpg' %}" style="height: 100%;width: 100%;">
     </div>
     
-    <div id="service_list">
+    <div id="service_list" class="w3-animate-opacity">
         <!-- service header -->
         <div id="serv_head">
             <h1>Services</h1>
         </div>
         <!-- service body -->
         <div class="serv">
-            <span class="fa fa-user solid ico"></span>
-            <h3>Software Development</h3>
+            <span class="fa fa-python brand ico"></span>
+            <h3 class="proj_title">Software Development</h3>
+            <p>
+                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
+            </p>
+        </div>
+        <div class="serv">
+            <span class="fa fa-chart-bar solid ico"></span>
+            <h3 class="proj_title">Data Science</h3>
+            <p>
+                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
+            </p>
+        </div>
+        <div class="serv">
+            <span class="fa fa-html5 brand ico"></span>
+            <h3 class="proj_title">Static Websites</h3>
             <p>
                 In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
             </p>
         </div>
         <div class="serv">
             <span class="fa fa-user solid ico"></span>
-            <h3>Data Science</h3>
+            <h3 class="proj_title">Dynamic Websites</h3>
             <p>
                 In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
             </p>
         </div>
         <div class="serv">
-            <span class="fa fa-user solid ico"></span>
-            <h3>Static Websites</h3>
+            <div class="" id="responsive">
+                <span class="fa fa-mobile-alt solid" id="mob"></span>
+                <span class="fa fa-desktop solid" id="desk"></span>
+                <span class="fa fa-tablet-alt solid" id="tab"></span>
+            </div>
+            <h3 class="proj_title">Responsive Websites</h3>
             <p>
                 In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
             </p>
         </div>
         <div class="serv">
-            <span class="fa fa-user solid ico"></span>
-            <h3>Dynamic Websites</h3>
-            <p>
-                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
-            </p>
-        </div>
-        <div class="serv">
-            <span class="fa fa-user solid ico"></span>
-            <h3>Responsive Websites</h3>
-            <p>
-                In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
-            </p>
-        </div>
-        <div class="serv">
-            <span class="fa fa-user solid ico"></span>
-            <h3>CMS</h3>
+            {% load static %}
+            <img id="cms" src="{% static 'img/cms.svg' %}">
+            <h3 class="proj_title" style="margin: 2px;">CMS</h3>
             <p>
                 In tellus ipsum, ullamcorper vitae justo sit amet, mattis consequat tortor. Pellentesque rutrum, ligula
             </p>
@@ -61,6 +67,6 @@
 {% block otherscript %}
     <script>
         // set page as the active page
-        document.getElementById('about').classList.add('active');
+        document.getElementById('service').classList.add('active');
     </script>
 {% endblock %}

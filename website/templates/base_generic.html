@@ -15,7 +15,7 @@
         <link rel= "stylesheet" href="{% static 'fontawesome-5.10.2/css/fontawesome.min.css' %}">
     </head>
 
-    <body>
+    <body class="w3-card">
         <div class="" id="my_container">
             {% block aside %}
             <aside id="nav" class="w3-card">
@@ -23,13 +23,13 @@
                     <a id="home" class="fa fa-home solid w3-tooltip" href="{% url 'index' %}">
                         <span class="w3-text tooltip">Home</span>
                     </a>
-                    <a id="about" class="fa fa-cogs solid w3-tooltip" href="{% url 'services' %}">
+                    <a id="service" class="fa fa-cogs solid w3-tooltip" href="{% url 'services' %}">
                         <span class="w3-text tooltip">Services</span>
                     </a>
                     <a id="portfolio" class="fa fa-briefcase solid w3-tooltip" href="{% url 'portfolio' %}">
                         <span class="w3-text tooltip">Portfolio</span>
                     </a>
-                    <a id="contact" class="fa fa-envelope solid w3-tooltip">
+                    <a id="contact" class="fa fa-envelope solid w3-tooltip" href="{% url 'contact' %}">
                         <span class="w3-text tooltip">Contact</span>
                     </a>
                     <a id="blog" class="fa fa-blog solid w3-tooltip">
@@ -41,7 +41,22 @@
             <section>
                 {% block content %}{% endblock %}
             </section>
+            <footer>
+                <div id="social" class="w3-container w3-center">
+                    <a class="fa fa-envelope solid so" href=""></a>
+                    <a class="fa fa-facebook brand so"></a>
+                    <a class="fa fa-twitter brand so"></a>
+                    <a class="fa fa-github brand so"></a>
+                    <a class="fa fa-linkedin brand so"></a>
+                </div>
+                <div class="w3-container w3-center">Copyright &copy; 2019, Adeboye Emmanuel. All right reserved.</div>
+            </footer>
         </div>
+        <!--/////////////////////////////////////////////////////////////////
+        //    This website was designed and developed by Adeboye Emmanuel  //
+        //    
+        //    email: emmanueladeboye2017@gmail.com                         //
+        //////////////////////////////////////////////////////////////////-->
         <script src = "./fontawesome-5.10.2/js/fontawesome.min"></script>
         {% block otherscript %}{% endblock %}
     </body>

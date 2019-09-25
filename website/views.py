@@ -27,3 +27,10 @@ def portfolio(request):
         'project':project
     }
     return render(request, 'portfolio.html', context=contex)
+
+def contact(request):
+    """ view for the contact page """
+    contex = {
+
+    }
+    return render(request, 'contact.html', context=contex)

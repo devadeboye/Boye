@@ -15,12 +15,12 @@ body{
     /*! background-repeat: no-repeat; */
     /*! background-size: cover; */
     width:100%;
-    height: 611px;
+    height: 100%;
 }
 #nav{
     background-color: rgba(0, 0, 0, 0.8);
     width:50px;
-    height: 611px;
+    height: 100%;
     position: fixed;
     left: 0%;
     z-index: 1;
@@ -68,10 +68,11 @@ body{
 }
 #main_bg {
   width: 100%;
-  height: 611px;
+  height: 100%;
   position: fixed;
 }
-#intro{
+#intro{3
+    animation: opac 2s;
     position: absolute;
     bottom: 15%;
     left: 57%;
@@ -81,6 +82,7 @@ body{
     width: 43%;
 }
 #service_list,#port_list{
+    animation: opac 3s;
     position: absolute;
     top: 239px;
     width: 78%;
@@ -94,10 +96,15 @@ body{
     background-color: rgba(255, 255, 255, 0.8);
     color: #000;
     border-radius: 7px;
+    height: 250PX;
 }
 .ico{
     margin-left: 34%;
     font-size: 80px;
+}
+#cms{
+    margin-left: 30%;
+    width: 40%;
 }
 #serv_head, #port_head{
     margin-left: 16px;
@@ -112,28 +119,472 @@ body{
 .serv h3{
     text-align: center;
 }
+#m01{
+    width: 100%;
+}
+#caption{
+    position: relative;   
+    bottom: 72%;
+    color: #fff;
+        height: 100%;
+    background-color:
+        height: 100%; rgba(0, 0, 0, 0.5);
+    padding: 3% 0%;
+        height: 100%;
+    width: 93%;
+        height: 100%;
+    left: 4%;
+    display: none;
+}
+#caption:hover{
+    display: block;
+}
+#mob, #desk, #tab{
+    position: relative;
+}
+#mob{
+    top: 40px;
+    left: 24px;
+}
+#tab{
+    top: 40px;
+    right: 24px;
+}
+#responsive {
+    font-size: 40px;
+    margin-left: 24%;
+    margin-bottom: 12%;
+}
+footer{
+    /*position: fixed;
+    top: 586px;
+    left: 12%;*/
+}
+#contact_section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.port{
+    float: left;
+    width: 29%;
+    margin: 16px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border-radius: 7px;
+    height: 250PX;
+}
+.port_popup {
+    width: auto;
+    margin-left: 11%;
+    margin-top: -3%;
+}
+
+
+
+@media (max-width: 1025px){
+    /* start of style for computers with medium screen */
+    
+    #intro {
+        animation: opac 2s;
+        position: absolute;
+        bottom: 19%;
+        left: 54%;
+        background-color: rgb(255,255,255,0.8);
+        color: #000;
+        padding: 2%;
+        width: 46%;
+    }
+    #service_list, #port_list {
+        animation: opac 3s;
+        position: absolute;
+        top: 239px;
+        width: 78%;
+        left: 24%;
+    }
+    #serv_head, #port_head {
+        margin-left: 6px;
+        background-color: rgb(255,255,255,0.8);
+        border-radius: 7px;
+        width: 96.1%;
+        color: #000;
+        margin-bottom: -4px;
+    }
+    .serv {
+        float: left;
+        width: 31%;
+        margin: 6px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+        border-radius: 7px;
+        height: 289px;
+    }
+    .proj_title{
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    .proj_title ~ p{
+        text-align: center;
+        text-align: -moz-center;
+    }
+    .ico {
+        margin-left: 33%;
+        font-size: 75px;
+    }
+    .port {
+        float: left;
+        width: 31%;
+        margin: 6px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+        border-radius: 7px;
+        height: 220px;
+    }
+    .port_popup {
+        width: auto;
+        margin-left: 11%;
+        margin-top: -3%;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 991px){
+    /* start of large tablet styles */
+
+    #service_list, #port_list {
+        animation: opac 3s;
+        position: absolute;
+        top: 239px;
+        width: 65%;
+        left: 36%;
+    }
+    .serv {
+        float: left;
+        width: 47%;
+        margin: 6px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+        border-radius: 7px;
+        height: 289px;
+    }
+    .port {
+        float: left;
+        width: 47%;
+        margin: 6px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+        border-radius: 7px;
+        height: 220px;
+    }
+    .port_popup {
+        width: auto;
+        margin-left: 12%;
+        margin-top: 2%;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 769px){
+    /* start of medium tablet styles */
+
+    #intro {
+        animation: opac 2s;
+        position: absolute;
+        bottom: 29%;
+        left: 5%;
+        background-color: rgb(255,255,255,0.8);
+        color: #000;
+        padding: 2%;
+        width: 90%;
+    }
+    /* style for the menubar buttons and label starts here */
+    #nav {
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 15%;
+        position: fixed;
+        left: 0%;
+        z-index: 1;
+        padding-bottom: 1%;
+    }
+    #nav_but {
+        position: relative;
+        top: 26%;
+        left: 44%;
+    }
+    #nav a {
+        display: inline;
+        font-size: 25px;
+        padding: 4.9% 2.6%;
+        color: rgb(255,255,255,0.8);
+        text-decoration: none;
+        margin-bottom: 0%;
+    }
+    .w3-tooltip .w3-text {
+        display: block;
+    }
+    .active .w3-text {
+        color: #000;
+        background-color: transparent;
+    }
+    #home{
+        position: relative;
+    }
+    .tooltip {
+        font-size: 14px;
+        position: absolute;
+        top: 75%;
+        left: 17%;
+        padding: 0%;
+        border-radius: 0%;
+        background-color: transparent;
+    }
+    #portfolio .tooltip{
+        left: 6%;
+    }
+    #contact .tooltip{
+        left: 6%;
+    }
+    #blog .tooltip{
+        left: 15%;
+    }
+    #service .tooltip{
+        left: 8%;
+    }
+    /* style for the menubar buttons and label ends here */
+    #service_list, #port_list {
+        animation: opac 3s;
+        position: absolute;
+        top: 239px;
+        width: 91%;
+        left: 6%;
+    }
+    .ico {
+        margin-left: 39%;
+        font-size: 75px;
+    }
+    #responsive {
+        font-size: 40px;
+        margin-left: 28%;
+        margin-bottom: 12%;
+    }
+    .port_popup {
+        width: auto;
+        margin: auto;
+        
+    }
+}
+
+
+
+@media (max-width: 736px){
+    
+    #nav{
+        height: 64px;
+    }
+}
+
+
+
+@media screen and (max-width: 479px){
+    /* start of phones styles */
+
+    #nav{
+        height: 70px;
+    }
+    #nav_but {
+        position: relative;
+        top: 26%;
+        left: 1%;
+    }
+    #nav a {
+        display: inline;
+        font-size: 20px;
+        padding: 32px 24px;
+        color: rgb(255,255,255,0.8);
+        text-decoration: none;
+        margin-bottom: 0%;
+    }
+    #intro {
+        animation: opac 2s;
+        position: absolute;
+        bottom: 23%;
+        left: 5%;
+        background-color: rgb(255,255,255,0.8);
+        color: #000;
+        padding: 2%;
+        width: 90%;
+    }
+    #service_list, #port_list {
+        animation: opac 3s;
+        position: absolute;
+        top: 25%;
+        width: 85%;
+        left: 8%;
+    }
+    .serv {
+        float: left;
+        width: 96%;
+        margin: 6px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+        border-radius: 7px;
+        height: 289px;
+    }
+    .port {
+        float: left;
+        width: 96%;
+        margin: 6px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+        border-radius: 7px;
+        height: 220px;
+    }
+    .port_popup {
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 375px){
+    #nav{
+        height: 70px;
+    }
+    #nav_but {
+        position: relative;
+        top: 17px;
+        left: 10px;
+    }
+}
+
+@media (width: 320px){
+    body{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 33px;
+    }
+    #nav{
+        height: 70px;
+    }
+    #nav a {
+        display: inline;
+        font-size: 19px;
+        padding: 32px 18px;
+        color: rgb(255,255,255,0.8);
+        text-decoration: none;
+        margin-bottom: 0%;
+    }
+    #nav_but {
+        position: relative;
+        top: 17px;
+        left: 10px;
+    }
+    .tooltip{
+        font-size: 9px;
+    }
+    #service .tooltip, #portfolio .tooltip, #contact .tooltip {
+        left: 17%;
+    }
+    #blog .tooltip, #home .tooltip{
+        left: 15px;
+    }
+    #serv_head h1, #port_head h1 {
+        margin-left: 25%;
+    }
+    .ico {
+        margin-left: 34%;
+        font-size: 75px;
+    }
+    #responsive {
+        font-size: 40px;
+        margin-left: 21%;
+        margin-bottom: 12%;
+    }
+    #service_list, #port_list {
+        animation: opac 3s;
+        position: absolute;
+        top: 25%;
+        width: 95%;
+        left: 3%;
+    }
+    #contact_section {
+        position: absolute;
+        left: -2%;
+    }
+    .trans_black{
+        background-color: rgb(0,0,0,0.9);
+    }
+    footer {
+        position: fixed;
+        top: 91%;
+        font-size: 10px;
+    }
+    .so{
+        padding-right: 1%;
+    }
+}
 
 
 
 
 
+/*------------ media querries to check height -------------*/
 
-/*------------ THEME ------------*/
-.w3-theme-l5 {color:#000 !important; background-color:#f0f5ff !important}
-.w3-theme-l4 {color:#000 !important; background-color:#ccddff !important}
-.w3-theme-l3 {color:#000 !important; background-color:#99bbff !important}
-.w3-theme-l2 {color:#fff !important; background-color:#6699ff !important}
-.w3-theme-l1 {color:#fff !important; background-color:#3377ff !important}
-.w3-theme-d1 {color:#fff !important; background-color:#004de6 !important}
-.w3-theme-d2 {color:#fff !important; background-color:#0044cc !important}
-.w3-theme-d3 {color:#fff !important; background-color:#003cb3 !important}
-.w3-theme-d4 {color:#fff !important; background-color:#003399 !important}
-.w3-theme-d5 {color:#fff !important; background-color:#002b80 !important}
+@media (max-height: 736px){
 
-.w3-theme-light {color:#000 !important; background-color:#f0f5ff !important}
-.w3-theme-dark {color:#fff !important; background-color:#002b80 !important}
-.w3-theme-action {color:#fff !important; background-color:#002b80 !important}
+    #intro {
+        animation: opac 2s;
+        position: absolute;
+        bottom: 18%;
+        left: 5%;
+        background-color: rgb(255,255,255,0.8);
+        color: #000;
+        padding: 2%;
+        width: 90%;
+    }
+}
 
-.w3-theme {color:#fff !important; background-color:#0056ff !important}
-.w3-text-theme {color:#0056ff !important}
-.w3-theme-border {border-color:#0056ff !important}
+@media (height: 568px){
+
+    #intro{
+        bottom: 1px;
+    }
+    #contact_section{
+        top: 25%;
+    }
+}
+
+
+@media (max-height: 414px){
+    
+    
+    #nav_but {
+        top: 15%;
+    }
+    #intro{
+        bottom: -27%;
+    }
+    #service_list, #port_list{
+        top: 158px;
+    }
+}

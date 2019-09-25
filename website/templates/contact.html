@@ -1,0 +1,31 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Boye - Contact</title>{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <div id="main_bg">
+        <img src="{% static 'img/nature1.jpg' %}" style="height: 100%;width: 100%;">
+    </div>
+    <div id="contact_section">
+        <div id="contact_form">
+            <div class="w3-container w3-center trans_black">
+                <h2>Contact Me</h2>
+            </div>
+            <form action="MAIL TO:emmanueladeboye2017@gmail.com" class="w3-container" method="POST" enctype="text/plain">
+                <input type="text" class="w3-input w3-border" name="name" id="client_name" placeholder="Enter your name" required>
+                <input type="email" class="w3-input w3-border" name="email" id="client_email" placeholder="Enter your email" required>
+                <input type="tel" class="w3-input w3-border" name="phone" id="client_phone" placeholder="Enter your phone number">
+                <textarea class="w3-border" name="msg" rows="4" cols="30" id="msg" placeholder="Enter your message here."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block otherscript %}
+    <script>
+        // set page as the active page
+        document.getElementById('contact').classList.add('active');
+    </script>
+{% endblock %}
