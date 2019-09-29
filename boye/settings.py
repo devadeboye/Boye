@@ -20,10 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'e_dlv!lw=uczjpn7_n+#g+5u=a%01rhi@lci-9_afduk9=4$vu'
+f = open('sec_key.txt', 'r')
+SECRET_KEY = f.read()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -87,12 +88,6 @@ DATABASES = {
     }
 }
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}"""
 
 
 # Password validation
@@ -133,6 +128,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# set the media rpot
+# set the media root
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
